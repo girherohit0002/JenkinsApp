@@ -7,14 +7,18 @@ namespace MyMaths
         public int x { get; set; }
         public int y { get; set; }
 
-        public void Add()
+        public int Add(int x,int y)
         {
-            Console.WriteLine($"The addition of the {this.x} and {this.y} is {this.x + this.y}.");
+            this.x = x;
+            this.y = y;
+              return this.x + this.y;
         }
 
-        public void Multiply()
+        public int Multiply(int x,int y)
         {
-            Console.WriteLine($"The multiplication of the {this.x} and {this.y} is {this.x * this.y}.");
+            this.x = x;
+            this.y = y;
+            return this.x * this.y; 
         }
     }
 }
