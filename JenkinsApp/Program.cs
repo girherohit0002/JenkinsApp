@@ -12,11 +12,10 @@ namespace JenkinsApp
 
             Console.WriteLine("This is changing I am doing in order to whether it is running or not");
 
-            Oprations op = new Oprations();
+            Oprations op = new Oprations () { };
             op.x = 12;
             op.y = 45;
-            op.Add();
-            op.Multiply();
+            Console.WriteLine($"Addition is {op.Add(op.x,op.y)} and Multiplication is {op.Multiply(op.x, op.y)}");
 
             Console.WriteLine("Exiting from application...............");
             Console.ReadLine();
