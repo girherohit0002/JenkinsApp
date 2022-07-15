@@ -15,7 +15,7 @@ namespace MyMaths
         }
 
         public int Multiply(int x,int y)
-        {
+        { 
             this.x = x;
             this.y = y;
             return this.x * this.y; 
